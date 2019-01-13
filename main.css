@@ -22,11 +22,13 @@ time, mark, audio, video {
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: hsl(0, 0%, 24%);
+  font-size: 1.8rem;
 }
 
 h1, h3, h4, h5, h6 {
@@ -34,18 +36,20 @@ h1, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+  font-size: 4.2rem;
 }
 
 h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
   text-transform: uppercase;
   text-align: center;
+  font-size: 2.4rem;
 }
 
 h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
+  font-size: 3rem;
 }
 
 a {
@@ -60,21 +64,28 @@ a:hover, a:focus {
 
 p {
   line-height: 1.5;
+  max-width: 70rem;
+}
+
+form {
+  max-width: 70rem;
 }
 
 input, textarea {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 6px;
   border: 1px solid hsl(0, 0%, 78%);
+  font-size: 1.8rem;
 }
 
 button, input[type="submit"] {
-  padding: 0.65rem 1rem;
+  padding: 1rem 1.6rem;
   background-color: hsl(35, 100%, 68%);
   text-transform: uppercase;
   border: none;
   cursor: pointer;
   transition: background-color .2s ease-in-out;
+  font-size: 1.8rem;
 }
 
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
@@ -82,13 +93,13 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
 }
 
 .container {
-  max-width: 800px;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 header, section {
-  padding: 2rem 0;
+  padding: 3.2rem 0;
 }
 
 header, section:nth-child(odd) {
@@ -101,7 +112,7 @@ header {
 
 @media screen and (min-width: 800px) {
   header {
-    margin-bottom: 8rem;
+    margin-bottom: 12.8rem;
   }
 }
 
@@ -120,7 +131,7 @@ header {
 }
 
 .main-nav {
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 .main-nav ul {
@@ -130,13 +141,13 @@ header {
 }
 
 .main-nav li:not(:last-of-type) {
-  margin-right: 1rem;
+  margin-right: 1.6rem;
 }
 
 .logo {
   width: 60px;
   height: 60px;
-  margin-right: 1rem;
+  margin-right: 1.6rem;
   padding: 10px;
   background-color: hsl(255, 18%, 75%);
   border-radius: 50%;
@@ -148,17 +159,17 @@ header {
 }
 
 .cta-form {
-  margin-top: 4rem;
+  margin-top: 6.4rem;
 }
 
 .cta-form-wrapper {
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .cta-label {
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.8rem;
 }
 
 .cta-text-input {
@@ -172,11 +183,11 @@ header {
 
 .cta-notice {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .name-wrapper, .email-wrapper, .message-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -185,7 +196,7 @@ header {
     grid-template-areas:
       "field-name field-email"
       "field-message field-message";
-    grid-gap: 1rem;
+    grid-gap: 1.6rem;
   }
 
   .name-wrapper {
@@ -203,7 +214,7 @@ header {
 
 .contact-label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .contact-field {
@@ -211,5 +222,13 @@ header {
 }
 
 .contribute-message {
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+#past-events {
+  position: relative;
+}
+
+#contribute {
+  padding-top: 11.2rem;
 }
