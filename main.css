@@ -108,9 +108,8 @@ header {
 .header-wave {
   display: none;
   position: absolute;
-  bottom: 0;
+  top: 100%;
   width: 100%;
-  transform: translateY(100%);
 }
 
 @media screen and (min-width: 800px) {
