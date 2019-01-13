@@ -1,0 +1,15 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" stroke-width="10" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <style>
+    rect {
+      animation: rotation 40s linear infinite;
+    }
+    @keyframes rotation {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <rect x="700" y="350" width="70" height="70" stroke="#FF7657" transform-origin="300 300" />
+  <circle cx="40" cy="40" r="35" stroke="#FFBA5A"/>
+  <path d="M10.5908 45.804L60.7817 32.3553L47.3331 82.5463L10.5908 45.804Z" stroke="#FF7657"/>
+</svg>
