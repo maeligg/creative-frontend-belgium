@@ -53,9 +53,9 @@ h3 {
 }
 
 a {
-  color:hsl(255, 18%, 44%);
   text-decoration: none;
   font-weight: bold;
+  color:hsl(255, 18%, 44%);
 }
 
 a:hover, a:focus {
@@ -93,9 +93,9 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
 }
 
 .container {
-  max-width: 110rem;
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 header, section {
@@ -119,9 +119,14 @@ header {
 .background-wave {
   display: none;
   position: absolute;
-  bottom: 0;
+  top: 100%;
   width: 100%;
-  transform: translateY(100%);
+}
+
+.background-wave--past {
+  height: 6rem;
+  bottom: 0;
+  top: auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -145,8 +150,8 @@ header {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   margin-right: 1.6rem;
   padding: 10px;
   background-color: hsl(255, 18%, 75%);
@@ -227,8 +232,86 @@ header {
 
 #past-events {
   position: relative;
+  padding-bottom: 6rem;
+  overflow: hidden;
+}
+
+#past-events .container {
+  position: relative;
+}
+
+
+.pre-icon:before {
+  content:"";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1.6rem;
+}
+.event-time:before {
+  background-image: url(img/icon-calendar.svg);
+}
+.event-location:before {
+  background-image: url(img/icon-location.svg);
+}
+.event-register:before {
+  background-image: url(img/icon-register.svg);
+}
+.event-report:before {
+  background-image: url(img/icon-newspaper.svg);
+}
+
+.past-event {
+  display: flex;
+}
+
+.past-event + .past-event {
+  margin-top: 8rem;
+}
+
+.event-info {
+  flex-shrink: 0;
+  padding-right: 4rem;
+}
+.event-info a,
+.event-info time,
+.event-info p {
+  line-height: 2.4;
+  display: block;
+}
+
+.event-photos img {
+  width: 55%;
+  border: 4px solid #FF7657;
+}
+.event-photos img:first-child {
+  margin-left: 45%;
+}
+.event-photos img:last-child {
+  margin-top: -25%;
+  border-color: #FFBA5A;
+}
+
+.past-event:nth-child(odd) .event-info {
+  order: 1;
+  padding-right: 0;
+  padding-left: 4rem;
+}
+
+.past-event:nth-child(odd) .event-photos img:first-child {
+  margin-left: 0;
+  border-color: #FFBA5A;
+}
+.past-event:nth-child(odd) .event-photos img:last-child {
+  margin-left: 45%;
+  border-color: #FF7657;
 }
 
 #contribute {
   padding-top: 11.2rem;
+  display: flex;
 }
