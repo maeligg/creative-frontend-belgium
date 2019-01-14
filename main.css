@@ -1,3 +1,13 @@
+:root {
+  --primary: hsl(35, 100%, 68%);
+  --primary-dark: hsl(35, 100%, 60%);
+  --text: hsl(0, 0%, 24%);
+  --link: hsl(255, 18%, 44%);
+  --link-light: hsl(255, 18%, 75%);
+  --background: hsl(38, 82%, 91%);
+  --grey: hsl(0, 0%, 78%);
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +36,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: hsl(0, 0%, 24%);
+  color: var(--text);
 }
 
 h1, h3, h4, h5, h6 {
@@ -49,7 +59,7 @@ h3 {
 }
 
 a {
-  color:hsl(255, 18%, 44%);
+  color: var(--link);
   text-decoration: none;
   font-weight: bold;
 }
@@ -65,12 +75,12 @@ p {
 input, textarea {
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 1px solid hsl(0, 0%, 78%);
+  border: 1px solid var(--grey);
 }
 
 button, input[type="submit"] {
   padding: 0.65rem 1rem;
-  background-color: hsl(35, 100%, 68%);
+  background-color: var(--primary);
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -78,7 +88,7 @@ button, input[type="submit"] {
 }
 
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: hsl(35, 100%, 60%);
+  background-color: var(--primary-dark);
 }
 
 .container {
@@ -92,7 +102,7 @@ header, section {
 }
 
 header, section:nth-child(odd) {
-  background-color:	hsl(38, 82%, 91%);
+  background-color:	var(--background);
 }
 
 header {
@@ -137,7 +147,7 @@ header {
   height: 60px;
   margin-right: 1rem;
   padding: 10px;
-  background-color: hsl(255, 18%, 75%);
+  background-color: var(--link-light);
   border-radius: 50%;
 }
 
