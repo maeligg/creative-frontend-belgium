@@ -37,7 +37,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--text);
 }
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-bottom: 1.6rem;
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 
 .title-wrapper {
@@ -82,7 +82,7 @@ h2::after {
 
 h3 {
   margin-bottom: 1.6rem;
-  font-size: 3rem;
+  font-size: 1.8rem;
 }
 
 a {
@@ -108,7 +108,7 @@ input, textarea {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
   border: 1px solid hsl(0, 0%, 78%);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 button, input[type="submit"] {
@@ -119,7 +119,7 @@ button, input[type="submit"] {
   border: none;
   cursor: pointer;
   transition: background-color .2s ease-in-out;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
@@ -222,7 +222,7 @@ header {
 
 .cta-notice {
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .name-wrapper, .email-wrapper, .message-wrapper {
