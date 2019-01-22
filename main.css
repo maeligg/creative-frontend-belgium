@@ -307,9 +307,7 @@ header {
   background-image: url(img/icon-newspaper.svg);
 }
 
-.past-event {
-  display: flex;
-}
+.past-event {}
 
 .past-event + .past-event {
   margin-top: 8rem;
@@ -318,6 +316,7 @@ header {
 .event-info {
   flex-shrink: 0;
   padding-right: 4rem;
+  margin-bottom: 2rem;
 }
 .event-info a,
 .event-info time,
@@ -327,21 +326,20 @@ header {
 }
 
 .event-photos img {
-  width: 55%;
+  width: 70%;
   border: 4px solid #FF7657;
 }
 .event-photos img:first-child {
-  margin-left: 45%;
+  margin-left: 30%;
 }
 .event-photos img:last-child {
-  margin-top: -25%;
+  margin-top: -15%;
   border-color: #FFBA5A;
 }
 
 .past-event:nth-child(odd) .event-info {
   order: 1;
   padding-right: 0;
-  padding-left: 4rem;
 }
 
 .past-event:nth-child(odd) .event-photos img:first-child {
@@ -349,8 +347,32 @@ header {
   border-color: #FFBA5A;
 }
 .past-event:nth-child(odd) .event-photos img:last-child {
-  margin-left: 45%;
+  margin-left: 30%;
   border-color: #FF7657;
+}
+
+@media screen and (min-width: 800px) {
+  .past-event {
+    display: flex;
+  }
+  .event-info {
+    margin-bottom: 0;
+  }
+  .event-photos img {
+    width: 55%;
+  }
+  .event-photos img:first-child {
+    margin-left: 45%;
+  }
+  .event-photos img:last-child {
+    margin-top: -25%;
+  }
+  .past-event:nth-child(odd) .event-info {
+    padding-left: 4rem;
+  }
+  .past-event:nth-child(odd) .event-photos img:last-child {
+    margin-left: 45%;
+  }
 }
 
 #contribute {
