@@ -8,8 +8,9 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Sansita" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|IBM+Plex+Serif" rel="stylesheet">
 </head>
 
 <body>
@@ -41,14 +42,18 @@
   </header>
   <section id="next-event">
     <div class="container">
-        <h2>Next event</h2>
+        <div class="title-wrapper">
+          <h2>Next event</h2>
+        </div>
         <h3>To be announced</h3>
         <p>Subscribe to our mailing list to be notified as soon as the event is announced !</p>
     </div>
   </section>
   <section id="past-events">
     <div class="container">
-      <h2>Past events</h2>
+      <div class="title-wrapper">
+        <h2>Past events</h2>
+      </div>
       <article class="past-event">
         <div class="event-info">
           <h3>CodePen Meetup</h3>
@@ -76,27 +81,28 @@
       </article>
     </div>
     <svg viewBox="0 0 1440 58" preserveAspectRatio="none" class="background-wave background-wave--past">
-      <!-- <rect width="1440" height="58" fill="#FBEED7" /> -->
       <path fill="white" d="M0,0v58h1440V0c0,0-257.63,58-759.85,58C177.93,58,0,0,0,0z"/>
     </svg>
   </section>
   <section id="contribute">
     <div class="container">
-      <h2>Contribute</h2>
+      <div class="title-wrapper">
+        <h2>Contribute</h2>
+      </div>
       <p class="contribute-message">We are always looking for <b>sponsors</b> and <b>speakers</b> for our next events. You can also join the <b>organising team</b> to help set up the meetups. If you would like to contribute, please get in touch with us.</p>
-      <form action="">
+      <form name="contact-form" netlify>
         <div class="contact-form">
             <div class="name-wrapper">
                 <label for="name" class="contact-label">Your name (required)</label>
-                <input type="text" id="name" class="contact-field" placeholder="Charles Michel">
+                <input type="text" required id="name" class="contact-field" placeholder="Charles Michel">
             </div>
             <div class="email-wrapper">
                 <label for="email" class="contact-label">Your email (required)</label>
-                <input type="text" id="email" class="contact-field" placeholder="charles.michel@ex-premier.fed.be">
+                <input type="email" required id="email" class="contact-field" placeholder="charles.michel@premier.fed.be">
             </div>
             <div class="message-wrapper">
                 <label for="message" class="contact-label">Your message (required)</label>
-                <textarea id="message" class="contact-field" cols="30" rows="10"></textarea>
+                <textarea id="message" required class="contact-field" cols="30" rows="10"></textarea>
             </div>
         </div>
         <input type="submit" value="send" class="contact-submit">
