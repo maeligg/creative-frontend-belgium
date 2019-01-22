@@ -1,4 +1,9 @@
 function backgroundShapes() {
+  // If user asked for reduced motion while browsing, don't run the script
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
   // Get the Canvas element from the DOM
   const canvas = document.querySelector('.background-shapes');
   // Store its context in a variable
