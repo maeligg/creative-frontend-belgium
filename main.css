@@ -97,7 +97,6 @@ a:hover, a:focus {
 
 p {
   line-height: 1.5;
-  max-width: 70rem;
 }
 
 form {
@@ -264,13 +263,13 @@ header {
   margin-bottom: 3.2rem;
 }
 
-#past-events {
+.past-events {
   position: relative;
   padding-bottom: 6rem;
   overflow: hidden;
 }
 
-#past-events .container {
+.past-events .container {
   position: relative;
 }
 
@@ -306,8 +305,6 @@ header {
 .event-report:before {
   background-image: url(img/icon-newspaper.svg);
 }
-
-.past-event {}
 
 .past-event + .past-event {
   margin-top: 8rem;
@@ -375,7 +372,7 @@ header {
   }
 }
 
-#contribute {
+.contribute {
   padding-top: 6rem;
   display: flex;
 }
