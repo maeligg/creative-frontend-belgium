@@ -99,10 +99,6 @@ p {
   line-height: 1.5;
 }
 
-form {
-  max-width: 70rem;
-}
-
 input, textarea {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
