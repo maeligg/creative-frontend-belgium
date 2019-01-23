@@ -5,7 +5,7 @@ function backgroundShapes() {
   }
 
   // Get the Canvas element from the DOM
-  const canvas = document.querySelector('.background-shapes');
+  const canvas = document.querySelector('.js-background-shapes');
   // Store its context in a variable
   const ctx = canvas.getContext('2d');
   // Width & Height of the scene
