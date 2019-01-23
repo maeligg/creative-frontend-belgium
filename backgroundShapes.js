@@ -125,6 +125,11 @@ function backgroundShapes() {
   function render () {
     window.requestAnimationFrame(render);
 
+    // Check if canvas height changed
+    if (h !== canvas.offsetHeight) {
+      afterResize();
+    }
+
     // Clear the canvas
     ctx.clearRect(0, 0, w, h);
 
@@ -134,8 +139,8 @@ function backgroundShapes() {
       shape.update();
       // Detect if shape is outside of the screen
       shape.edges();
+      ctx.globalCompositeOperation = 'xor'
       // Draw the shape
-    ctx.globalCompositeOperation = 'xor'
       shape.draw(ctx);
     });
   }
