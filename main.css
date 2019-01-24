@@ -3,7 +3,6 @@
   --primary-dark: hsl(35, 100%, 60%);
   --text: hsl(0, 0%, 24%);
   --link: hsl(255, 18%, 44%);
-  --link-light: hsl(255, 18%, 75%);
   --accent: hsl(11,100%,67%);
   --background: hsl(38, 82%, 91%);
   --grey: hsl(0, 0%, 78%);
@@ -195,7 +194,7 @@ header {
   height: 6rem;
   margin-right: 1.6rem;
   padding: 10px;
-  background-color: var(--link-light);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 50%;
 }
 
