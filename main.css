@@ -101,7 +101,7 @@ p {
 }
 
 input, textarea {
-  padding: 0.8rem 1.6rem;
+  padding: 1rem;
   border-radius: 6px;
   border: 1px solid hsl(0, 0%, 78%);
   font-size: 1.4rem;
@@ -122,28 +122,29 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
   background-color: var(--primary-dark);
 }
 
-.container {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 header, section {
   padding: 3.2rem 0;
 }
 
 header {
-  background-color:	var(--background);
-}
-
-header {
   position: relative;
+  background-color:	var(--background);
 }
 
 @media screen and (min-width: 800px) {
   header {
     margin-bottom: 12.8rem;
   }
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .background-wave {
