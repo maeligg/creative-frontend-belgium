@@ -383,14 +383,26 @@ header {
 
 .footer .container {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .footer .container {
+    flex-direction: row;
+  }
+}
+
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .footer-links {
+    margin-left: 4rem;
+  }
 }
 
 .footer-link {
