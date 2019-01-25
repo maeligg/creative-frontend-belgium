@@ -389,6 +389,8 @@ header {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 4rem;
 }
 
 .footer-link {
