@@ -27,10 +27,12 @@
       </h1>
       <p>We organise meetups in Belgium for 👩‍💻 front-end developers and ✍️ web designers who are interested to share experience with theirs peers.</p>
 
-      <form action="" class="cta-form">
-        <label for="cta-text-input" class="cta-label">Get notified when we organise our next meetup →</label>
+      <form action="https://creativefrontend.us20.list-manage.com/subscribe/post" method="POST" class="cta-form">
+        <input type="hidden" name="u" value="6bc34ff93bc04601cdb37cd4f">
+        <input type="hidden" name="id" value="07b53acc94">
+        <label for="cta-email" class="cta-label">Get notified when we organise our next meetup →</label>
         <div class="cta-form-wrapper">
-          <input type="text" id="cta-text-input" placeholder="charles.michel@premier.fed.be" class="cta-text-input">
+          <input type="email" id="cta-email" name="MERGE0" placeholder="charles.michel@premier.fed.be" class="cta-email">
           <input type="submit" value="submit" class="cta-button">
         </div>
         <div class="cta-notice">We won’t share or use your email address for any other purposes, and you can unsubscribe at any time.</div>
@@ -95,15 +97,15 @@
         <div class="contact-form">
             <div class="name-wrapper">
                 <label for="name" class="contact-label">Your name (required)</label>
-                <input type="text" required id="name" class="contact-field" placeholder="Charles Michel">
+                <input type="text" required id="name" name="name" class="contact-field" placeholder="Charles Michel">
             </div>
             <div class="email-wrapper">
                 <label for="email" class="contact-label">Your email (required)</label>
-                <input type="email" required id="email" class="contact-field" placeholder="charles.michel@premier.fed.be">
+                <input type="email" required id="email" name="email" class="contact-field" placeholder="charles.michel@premier.fed.be">
             </div>
             <div class="message-wrapper">
                 <label for="message" class="contact-label">Your message (required)</label>
-                <textarea id="message" required class="contact-field" cols="30" rows="10"></textarea>
+                <textarea id="message" name="message" required class="contact-field" cols="30" rows="10"></textarea>
             </div>
         </div>
         <input type="submit" value="send" class="contact-submit">
