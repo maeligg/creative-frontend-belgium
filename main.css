@@ -121,7 +121,13 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
   background-color: var(--primary-dark);
 }
 
-header, section {
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header, section, footer {
   padding: 3.2rem 0;
 }
 
@@ -375,4 +381,46 @@ textarea {
 .contribute {
   padding-top: 6rem;
   display: flex;
+}
+
+.footer {
+  background-color: var(--background);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer .container {
+    flex-direction: row;
+  }
+}
+
+.footer-links {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .footer-links {
+    margin-left: 4rem;
+  }
+}
+
+.footer-link {
+  display: flex;
+}
+
+.footer-link + .footer-link {
+  margin-left: 1rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: .5rem;
 }
