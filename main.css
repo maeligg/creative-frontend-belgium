@@ -277,10 +277,11 @@ textarea {
 
 .pre-icon {
   display: flex;
-  align-items: baseline;
 }
+
 .pre-icon:before {
   content:"";
+  flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
   width: 2.5rem;
@@ -327,7 +328,7 @@ textarea {
 .event-info time,
 .event-info p {
   line-height: 1.8;
-  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .event-photos img {
