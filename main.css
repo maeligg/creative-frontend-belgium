@@ -50,7 +50,7 @@ body {
   color: var(--text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: 'RocherColor', serif;
   font-weight: normal;
 }
@@ -60,22 +60,16 @@ h1 {
   font-size: 4rem;
 }
 
-.title-wrapper {
+h2 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
   text-align: center;
   margin-bottom: 4rem;
 }
 
-h2 {
-  position: relative;
-  display: inline-block;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.4rem;
-}
-
 h3 {
   margin-bottom: 1.6rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 a {
@@ -281,8 +275,13 @@ textarea {
   position: relative;
 }
 
+.pre-icon {
+  display: flex;
+}
+
 .pre-icon:before {
   content:"";
+  flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
   width: 2.5rem;
@@ -294,6 +293,17 @@ textarea {
 }
 .event-time:before {
   background-image: url(img/icon-calendar.svg);
+}
+.event-location span {
+  position: relative;
+}
+.event-location a:before {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .event-location:before {
   background-image: url(img/icon-location.svg);
@@ -317,8 +327,8 @@ textarea {
 .event-info a,
 .event-info time,
 .event-info p {
-  line-height: 2.4;
-  display: block;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .event-photos img {
@@ -347,12 +357,55 @@ textarea {
   border-color: var(--accent);
 }
 
+.future-event {
+  flex-wrap: wrap;
+}
+
+.future-event > h3 {
+  width: 100%;
+}
+
+.speakers {
+  list-style: none;
+}
+
+.speakers li {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.speakers img {
+  width: 15rem;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.speakers .more {
+  font-family: 'RocherColor';
+  width: 15rem;
+  height: 15rem;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8rem;
+  background: var(--background);
+}
+
 @media screen and (min-width: 800px) {
+  .future-event,
   .past-event {
     display: flex;
+    flex-wrap: wrap;
   }
   .event-info {
+    width: 35%;
     margin-bottom: 0;
+  }
+  .event-details,
+  .event-photos {
+    width: 65%;
   }
   .event-photos img {
     width: 55%;
