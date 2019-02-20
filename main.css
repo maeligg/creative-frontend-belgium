@@ -377,6 +377,7 @@ textarea {
 .speakers img {
   width: 15rem;
   margin-right: 2rem;
+  flex-shrink: 0;
 }
 
 .speakers .more {
