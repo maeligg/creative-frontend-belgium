@@ -326,7 +326,8 @@ textarea {
 .event-info a,
 .event-info time,
 .event-info p {
-  line-height: 2.4;
+  line-height: 1.8;
+  padding-bottom: 0.5rem;
 }
 
 .event-photos img {
