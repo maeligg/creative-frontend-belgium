@@ -372,7 +372,7 @@ textarea {
 .speakers li {
   margin-top: 3rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .speakers img {
