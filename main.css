@@ -114,8 +114,12 @@ button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:foc
   padding: 0 2rem;
 }
 
-header, section, footer {
+header, footer {
   padding: 3.2rem 0;
+}
+
+section {
+  padding: 8rem 0;
 }
 
 header {
@@ -266,7 +270,6 @@ textarea {
 
 .past-events {
   position: relative;
-  padding-bottom: 6rem;
   overflow: hidden;
   background: none;
 }
@@ -448,7 +451,6 @@ textarea {
 
 .footer-links {
   display: flex;
-  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 800px) {
