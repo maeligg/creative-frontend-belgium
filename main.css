@@ -400,6 +400,7 @@ textarea {
   justify-content: center;
   font-size: 8rem;
   background: var(--background);
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 800px) {
