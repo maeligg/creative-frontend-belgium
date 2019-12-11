@@ -108,6 +108,8 @@ button, input[type="submit"] {
   cursor: pointer;
   transition: background-color .2s ease-in-out;
   font-size: 1.4rem;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
@@ -224,6 +226,7 @@ textarea {
 .cta-email {
   border-radius: 6px 0 0 6px;
   border: none;
+  margin: 0;
 }
 
 .cta-button {
